@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+<html><head>
+  <link rel="stylesheet" href="../../assessts/CSS/menu_bar.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, embed[type="application/pdf"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #181a1b;
+   --darkreader-neutral-text: #e8e6e3;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+.scroll_down{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 15px;
+  letter-spacing: 10px;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../../images/graffiti1.jpeg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../../images/graffiti2.jpeg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../../images/graffiti3.jpeg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<meta name="darkreader" content="b080e923589b3bf856b521eaf1e23bee"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}</style></head>
+<body class="__fb-dark-mode">
+  <div class="nav">
+        
+    <ul>
+      <li><a href="../../assessts/WebPages/page2.html">HOME</a></li>
+          <li><a href="./INDEX.html">EXPLORE</a></li>
+          <li><a href="../../assessts/WebPages/our_team.html">OUR TEAM</a></li>
+          <li><a href="../../assessts/WebPages/help.html">HELP</a></li>
+          <li><a href="../../assessts/WebPages/thanks.html">THANKS</a>
+              <ul>
+                  <li><a href="#">MORE1</a></li>
+                  <li><a href="#">MORE2</a></li>
+                  <li><a href="#">MORE3</a></li>
+                  <li><a href="#">MORE4</a></li>
+                  <li><a href="#">MORE5</a></li>
+              </ul>
+          </li>
+          <li><a href="../../assessts/WebPages/About.html">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="../../assessts/WebPages/resources.html">RESOURCES</a></li>
+          <li><a href="https://www.deviantart.com/">DEVIANT</a></li>
+          <li><a href="../../assessts/WebPages/gallery.html">GALLERY</a></li>
+          <li><a href="https://www.wikipedia.org/">WIKIPEDIA</a></li>
+
+  </ul>
+    
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">GRAFFITTI</span>
+  <br>
+  <br>  
+  <span class="scroll_down">!! scroll down !!</span>
+  </div>
+</div>
+
+<div style="color: rgb(119, 119, 119); background-color: white; padding: 50px 80px; text-align: justify; --darkreader-inline-color:#9d9488; --darkreader-inline-bgcolor:#181a1b;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">
+  <font color="lime" size="15px"><p style="text-align:center;">WHAT IS GRAFFITTI ?</p></font>
+  <center><p>Graffiti (both singular and plural; the singular graffito is very rare in English except in archeology)is writing or drawings made on a wall or other surface, usually without permission and within public view.Graffiti ranges from simple written words to elaborate wall paintings, and has existed since ancient times, with examples dating back to ancient Egypt, ancient Greece, and the Roman Empire.
+
+In modern times, spray paint and marker pens have become commonly used graffiti materials, and there are many different types and styles of graffiti; it is a rapidly developing art form.
+
+Graffiti is a controversial subject. In most countries, marking or painting property without permission is considered by property owners and civic authorities as defacement and vandalism, which is a punishable crime, citing the use of graffiti by street gangs to mark territory or to serve as an indicator of gang-related activities.Graffiti has become visualized as a growing urban "problem" for many cities in industrialized nations, spreading from the New York City subway system in the early 1970s to the rest of the United States and Europe and other world regions.[6] On the other hand, graffiti artists, particularly marginalized artists with no access to mainstream media, resist this viewpoint to display their art or political views in public locations.
+
+The life of artist Jean-Michel Basquiat illustrates the subjective nature of the public response to graffiti. He started out as a street graffiti artist chased by authorities, and later one of his paintings sold for over $100,000,000.</p>
+
+  
+  </center>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color: transparent; font-size: 25px; color: rgb(247, 247, 247); --darkreader-inline-bgcolor:transparent; --darkreader-inline-color:#e3e1dd;" data-darkreader-inline-bgcolor="" data-darkreader-inline-color=""></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color: rgb(221, 221, 221); background-color: rgb(40, 46, 52); padding: 50px 80px; text-align: justify; --darkreader-inline-color:#d3cfc9; --darkreader-inline-bgcolor:#20252a;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">
+  <center><p>Both "graffiti" and its occasional singular form "graffito" are from the Italian word graffiato ("scratched"). "Graffiti" is applied in art history to works of art produced by scratching a design into a surface. A related term is "sgraffito",which involves scratching through one layer of pigment to reveal another beneath it. This technique was primarily used by potters who would glaze their wares and then scratch a design into it. In ancient times graffiti were carved on walls with a sharp object, although sometimes chalk or coal were used. The word originates from Greek γράφειν—graphein—meaning "to write"</p>
+  </center>
+
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color: transparent; font-size: 25px; color: rgb(247, 247, 247); --darkreader-inline-bgcolor:transparent; --darkreader-inline-color:#e3e1dd;" data-darkreader-inline-bgcolor="" data-darkreader-inline-color=""></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color: rgb(221, 221, 221); background-color: rgb(40, 46, 52); padding: 50px 80px; text-align: justify; --darkreader-inline-color:#d3cfc9; --darkreader-inline-bgcolor:#20252a;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">
+  <center><p>The term graffiti referred to the inscriptions, figure drawings, and such, found on the walls of ancient sepulchres or ruins, as in the Catacombs of Rome or at Pompeii. Use of the word has evolved to include any graphics applied to surfaces in a manner that constitutes vandalism.The only known source of the Safaitic language, an ancient form of Arabic, is from graffiti: inscriptions scratched on to the surface of rocks and boulders in the predominantly basalt desert of southern Syria, eastern Jordan and northern Saudi Arabia. Safaitic dates from the first century BC to the fourth century AD.</p>
+</center>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <a href="../../assessts/WebPages/page2.html"><span class="border">BACK</span></a>
+  </div>
+</div>
+
+
+</body><style type="text/css"></style><style class="darkreader darkreader--sync" media="screen"></style><div id="relaxer" style="transition: opacity 0.1s ease 0s; z-index: 2147483647; margin: 0px; border-radius: 0px; padding: 0px; background: rgb(250, 197, 99); pointer-events: none; position: fixed; top: -10%; right: -10%; width: 120%; height: 120%; opacity: 0.32; mix-blend-mode: multiply; display: none; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#8f5e05;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor=""></div></html>

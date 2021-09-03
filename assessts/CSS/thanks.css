@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    font-family: 'Kaushan Script', cursive;
+
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 16em;
+}
+h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animaate 2s linear infinite; 
+}
+@keyframes animate{
+    0%,100%
+    {
+        color: #fff;
+        filter: blur(2px);
+        box-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+    5%,95%
+    {
+        color: #111;
+        filter: blur(0px);
+    }
+}

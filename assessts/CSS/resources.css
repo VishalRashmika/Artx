@@ -1,0 +1,18 @@
+.iframe1{
+    width: 48%;
+    height: 800px;
+    float: left;
+}
+.iframe2{
+    width: 48%;
+    height: 800px;
+    float: right;
+}
+.iframe3{
+    width: 75%;
+    height: 850px;
+
+}
+.body{
+    background-color: #222;
+}
